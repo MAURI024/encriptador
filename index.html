@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./Styles/styles.css">
+</head>
+
+<body>
+    
+    <header class="header">
+        <img class="presentacion__logo" src="./images/Logo.png" alt="logo"></img>  
+    </header>
+    
+   <main class="presentacion">
+        <section class="presentacion__contenido__ingreso">
+            <div class="presentacion__contenido">
+                <textarea id="ingresoTexto" class="presentacion__texto" placeholder="Ingrese texto a encriptar"></textarea>
+                
+            </div>
+            <div>
+                <a class="presentacion__alerta"><img src="./images/bi_exclamation-circle-fill.png" alt="alerta">Solo minusculas y sin acentos.</a>
+            </div>    
+            <div class="presentacion__botones">    
+                <button id="encriptar">Encriptar</button>
+                <button id="desencriptar">Desencriptar</button>
+            </div>    
+        </section>
+        <section class="presentacion contenido__resultado">
+            <div id="result" class="presentacion__resultado">
+                <img class="presentacion__muneco" src="./images/Muñeco.png" alt="Muñeco">
+                <strong class="presentacion__sintexto">Ningun mensaje fue encontrado</strong>
+                <a class="presentacion__aviso ">Ingresa el texto que quieres encriptar o Desencriptar</a>
+            </div>
+        </section>    
+   </main> 
+   <script src="scrypt.js"></script>
+</body>
+</html>
